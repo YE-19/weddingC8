@@ -46,7 +46,7 @@ export function GoldFiligreeCorner({ className = 'w-10 h-10', position = 'top-le
 
 /**
  * Top & Bottom Pair of Golden Corner Brackets
- * Frames section headers like "ENGAGEMENT CEREMONY INFO"
+ * Frames section headers like "WEDDING CEREMONY INFO"
  */
 export function GoldHeaderFrame({ children, className = '' }) {
   return (

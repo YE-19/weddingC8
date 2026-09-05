@@ -56,9 +56,9 @@ export default function Announcement({ couple, eventDate }) {
 
           {/* Inner Content inside Tall Hero Frame */}
           <div className="relative z-10 w-full flex flex-col items-center justify-center my-auto text-center py-6">
-            {/* "THE ENGAGEMENT OF" */}
+            {/* "THE WEDDING OF" */}
             <p className="font-serif text-xs sm:text-sm font-semibold tracking-[0.28em] text-[#A8586E] uppercase mt-2 mb-10 sm:mb-12">
-              {couple.eventTitle || 'THE ENGAGEMENT OF'}
+              {couple.eventTitle || 'THE WEDDING OF'}
             </p>
 
             {/* Groom Name */}
@@ -88,13 +88,13 @@ export default function Announcement({ couple, eventDate }) {
           transition={{ duration: 0.6, delay: 0.2 }}
           className="mt-6 mb-4 w-full flex flex-col items-center text-center"
         >
-          {/* Framed Header: ENGAGEMENT CEREMONY INFO */}
+          {/* Framed Header: WEDDING CEREMONY INFO */}
           <div className="relative inline-block px-10 py-3 my-2">
             <GoldFiligreeCorner position="top-left" className="absolute -top-1 -left-2 w-8 h-8 sm:w-9 sm:h-9" />
             <GoldFiligreeCorner position="top-right" className="absolute -top-1 -right-2 w-8 h-8 sm:w-9 sm:h-9" />
             
             <h2 className="font-serif text-base sm:text-lg font-bold tracking-[0.22em] text-[#A8586E] uppercase">
-              {couple.ceremonyHeader || 'ENGAGEMENT CEREMONY INFO'}
+              {couple.ceremonyHeader || 'WEDDING CEREMONY INFO'}
             </h2>
           </div>
 
@@ -104,7 +104,7 @@ export default function Announcement({ couple, eventDate }) {
               {couple.announcementLine1 || 'WE JOYFULLY ANNOUNCE'}
             </p>
             <p className="font-serif text-xs sm:text-sm tracking-[0.2em] text-[#A8586E] uppercase font-normal">
-              {couple.announcementLine2 || 'THE ENGAGEMENT OF OUR CHILDREN'}
+              {couple.announcementLine2 || 'THE WEDDING OF OUR CHILDREN'}
             </p>
           </div>
         </motion.div>

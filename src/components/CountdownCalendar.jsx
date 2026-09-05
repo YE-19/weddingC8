@@ -77,10 +77,10 @@ export default function CountdownCalendar({ eventDate, venue, couple }) {
     const icsContent = [
       'BEGIN:VCALENDAR',
       'VERSION:2.0',
-      'PRODID:-//Engagement Invitation//EN',
+      'PRODID:-//Wedding Invitation//EN',
       'BEGIN:VEVENT',
-      `SUMMARY:Engagement Celebration: ${couple.primary || 'Halim & Kenzy'}`,
-      `DESCRIPTION:Join us for the engagement celebration of ${couple.primary || 'Halim & Kenzy'}.`,
+      `SUMMARY:Wedding Celebration: ${couple.primary || 'Halim & Kenzy'}`,
+      `DESCRIPTION:Join us for the wedding celebration of ${couple.primary || 'Halim & Kenzy'}.`,
       `LOCATION:${venue?.name || 'Lana Venue'}, ${venue?.address || ''}`,
       `DTSTART:${dtStart}`,
       `DTEND:${dtEnd}`,
@@ -92,7 +92,7 @@ export default function CountdownCalendar({ eventDate, venue, couple }) {
     const blob = new Blob([icsContent], { type: 'text/calendar;charset=utf-8' });
     const link = document.createElement('a');
     link.href = window.URL.createObjectURL(blob);
-    link.setAttribute('download', `${(couple.primary || 'Halim_Kenzy').replace(/\s+/g, '_')}_Engagement.ics`);
+    link.setAttribute('download', `${(couple.primary || 'Halim_Kenzy').replace(/\s+/g, '_')}_Wedding.ics`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -126,7 +126,7 @@ export default function CountdownCalendar({ eventDate, venue, couple }) {
       <div className="relative z-10 flex flex-col items-center">
         {/* Top Header matching Screenshot 2 */}
         <p className="font-serif text-xs sm:text-sm font-medium tracking-[0.16em] text-[#A8586E] uppercase mb-2">
-          {couple.partyHeader || 'THE ENGAGEMENT PARTY WILL TAKE PLACE AT:'}
+          {couple.partyHeader || 'THE WEDDING PARTY WILL TAKE PLACE AT:'}
         </p>
 
         {/* Main Event Time: 7:00 PM */}

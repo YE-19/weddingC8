@@ -15,12 +15,12 @@ export const invitationConfig = {
     primary: "Halim & Kenzy",
     initials: "H & K",
     monogram: "HK",
-    eventTitle: "THE ENGAGEMENT OF",
-    ceremonyHeader: "ENGAGEMENT CEREMONY INFO",
+    eventTitle: "THE WEDDING OF",
+    ceremonyHeader: "WEDDING CEREMONY INFO",
     announcementLine1: "WE JOYFULLY ANNOUNCE",
-    announcementLine2: "THE ENGAGEMENT OF OUR CHILDREN",
-    partyHeader: "THE ENGAGEMENT PARTY WILL TAKE PLACE AT:",
-    quote: "Together with our families, we joyfully invite you to celebrate our engagement.",
+    announcementLine2: "THE WEDDING OF OUR CHILDREN",
+    partyHeader: "THE WEDDING PARTY WILL TAKE PLACE AT:",
+    quote: "Together with our families, we joyfully invite you to celebrate our wedding.",
   },
 
   // Date & Time (Tuesday, 10 November 2026 at 7:00 PM)
@@ -92,7 +92,7 @@ export const invitationConfig = {
     {
       id: "w-2",
       name: "Ahmed & Salma",
-      wishes: "Congratulations Halim & Kenzy on your engagement! Can't wait to celebrate with you!",
+      wishes: "Congratulations Halim & Kenzy on your wedding! Can't wait to celebrate with you!",
       timestamp: "Today",
       likes: 12,
     },

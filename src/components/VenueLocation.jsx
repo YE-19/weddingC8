@@ -80,7 +80,7 @@ export default function VenueLocation({ venue }) {
 
           {/* Map Iframe */}
           <iframe
-            title="Engagement Venue Map"
+            title="Wedding Venue Map"
             src={venue.mapEmbedUrl}
             width="100%"
             height="100%"
