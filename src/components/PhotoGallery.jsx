@@ -28,17 +28,26 @@ export default function PhotoGallery({ gallery = [] }) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="group relative flex-1 aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4E2E6] shadow-md border border-[#D8B26E]/40 cursor-pointer"
+              className="group relative flex-1 aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4E2E6] shadow-md border border-[#D8B26E]/40 cursor-pointer flex items-center justify-center"
               onClick={() => setSelectedPhoto(photo1)}
             >
+              {/* Soft blurred ambient backdrop to fill frame seamlessly */}
+              <img
+                src={photo1.src}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover blur-sm scale-115 opacity-45 select-none pointer-events-none"
+              />
+
+              {/* Full uncropped photo */}
               <img
                 src={photo1.src}
                 alt={photo1.title || 'Groom'}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                className="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-1.5 border border-white/50 rounded-xl pointer-events-none group-hover:border-white/90 transition-colors" />
-              <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#742A3D]/40 backdrop-blur-xs flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute inset-1.5 border border-white/50 rounded-xl pointer-events-none group-hover:border-white/90 transition-colors z-20" />
+              <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#742A3D]/40 backdrop-blur-xs flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity z-20">
                 <Maximize2 className="w-3.5 h-3.5" />
               </div>
             </motion.div>
@@ -51,17 +60,26 @@ export default function PhotoGallery({ gallery = [] }) {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="group relative flex-1 aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4E2E6] shadow-md border border-[#D8B26E]/40 cursor-pointer"
+              className="group relative flex-1 aspect-[4/3] rounded-2xl overflow-hidden bg-[#F4E2E6] shadow-md border border-[#D8B26E]/40 cursor-pointer flex items-center justify-center"
               onClick={() => setSelectedPhoto(photo2)}
             >
+              {/* Soft blurred ambient backdrop to fill frame seamlessly */}
+              <img
+                src={photo2.src}
+                alt=""
+                aria-hidden="true"
+                className="absolute inset-0 w-full h-full object-cover blur-sm scale-115 opacity-45 select-none pointer-events-none"
+              />
+
+              {/* Full uncropped photo */}
               <img
                 src={photo2.src}
                 alt={photo2.title || 'Bride'}
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out"
+                className="relative z-10 w-full h-full object-contain group-hover:scale-105 transition-transform duration-500 ease-out"
                 loading="lazy"
               />
-              <div className="absolute inset-1.5 border border-white/50 rounded-xl pointer-events-none group-hover:border-white/90 transition-colors" />
-              <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#742A3D]/40 backdrop-blur-xs flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity">
+              <div className="absolute inset-1.5 border border-white/50 rounded-xl pointer-events-none group-hover:border-white/90 transition-colors z-20" />
+              <div className="absolute top-2 right-2 w-6 h-6 rounded-full bg-[#742A3D]/40 backdrop-blur-xs flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity z-20">
                 <Maximize2 className="w-3.5 h-3.5" />
               </div>
             </motion.div>
