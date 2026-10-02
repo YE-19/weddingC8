@@ -11,9 +11,9 @@ export default function PhotoGallery({ gallery = [] }) {
   const photo3 = gallery[2] || gallery[0];
 
   return (
-    <section id="gallery" className="py-6 sm:py-8 px-4 max-w-lg mx-auto text-center">
+    <section id="gallery" className="py-6 sm:py-8 px-4 max-w-lg mx-auto text-center bg-[#3B050E]">
       {/* Title */}
-      <h2 className="font-serif text-lg sm:text-xl font-bold tracking-[0.25em] text-[#A8586E] uppercase mb-6">
+      <h2 className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.25em] text-[#DFC187] uppercase mb-6 drop-shadow-[0_2px_10px_rgba(216,178,110,0.3)]">
         PHOTO GALLERY
       </h2>
 

@@ -59,22 +59,22 @@ export default function AudioPlayer({
         onClick={handleToggle}
         title={isPlaying ? 'Pause Music' : 'Play Background Music'}
         aria-label={isPlaying ? 'Pause Music' : 'Play Background Music'}
-        className="w-12 h-12 rounded-full bg-[#B86278] hover:bg-[#A35268] text-white shadow-[0_4px_18px_rgba(184,98,120,0.45)] flex items-center justify-center cursor-pointer transition-colors border border-white/40"
+        className="w-12 h-12 rounded-full bg-gradient-to-br from-[#DFC187] via-[#E8CD96] to-[#C7A158] hover:from-[#EED8A7] hover:to-[#DFC187] text-[#3B050E] shadow-[0_4px_20px_rgba(216,178,110,0.5)] flex items-center justify-center cursor-pointer transition-all border-2 border-[#FAF2E1]"
       >
-        {/* Exact 3 vertical white equalizer bars matching screenshots */}
+        {/* Exact 3 vertical equalizer bars */}
         <div className="flex items-end gap-1 h-4">
           <span
-            className={`w-0.5 rounded-full bg-white transition-all ${
+            className={`w-0.5 rounded-full bg-[#3B050E] transition-all ${
               isPlaying ? 'animate-bounce h-3 [animation-delay:-0.3s]' : 'h-3'
             }`}
           />
           <span
-            className={`w-0.5 rounded-full bg-white transition-all ${
+            className={`w-0.5 rounded-full bg-[#3B050E] transition-all ${
               isPlaying ? 'animate-bounce h-4.5 [animation-delay:-0.15s]' : 'h-4.5'
             }`}
           />
           <span
-            className={`w-0.5 rounded-full bg-white transition-all ${
+            className={`w-0.5 rounded-full bg-[#3B050E] transition-all ${
               isPlaying ? 'animate-bounce h-3.5' : 'h-3.5'
             }`}
           />

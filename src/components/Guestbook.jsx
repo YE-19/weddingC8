@@ -38,10 +38,10 @@ export default function Guestbook({ couple }) {
 
       try {
         confetti({
-          particleCount: 50,
+          particleCount: 60,
           spread: 70,
           origin: { y: 0.7 },
-          colors: ['#B86278', '#D8B26E', '#F3C5D0'],
+          colors: ['#DFC187', '#D8B26E', '#F4E4C2', '#C59F54', '#FFFFFF'],
         });
       } catch (err) {
         console.error(err);
@@ -54,12 +54,12 @@ export default function Guestbook({ couple }) {
   };
 
   return (
-    <section id="guestbook" className="py-8 sm:py-12 px-4 max-w-md mx-auto text-center">
-      <h2 className="font-serif text-lg sm:text-xl font-bold tracking-[0.2em] text-[#A8586E] uppercase mb-1">
+    <section id="guestbook" className="py-8 sm:py-12 px-4 max-w-md mx-auto text-center bg-[#3B050E]">
+      <h2 className="font-cinzel text-lg sm:text-xl font-bold tracking-[0.2em] text-[#DFC187] uppercase mb-1 drop-shadow-[0_2px_10px_rgba(216,178,110,0.3)]">
         GUESTBOOK
       </h2>
-      <p className="font-serif text-xs text-[#A8586E]/75 tracking-wide mb-6">
-        Leave your prayers and blessings for {couple?.primary || 'Halim & Kenzy'}
+      <p className="font-cormorant text-sm sm:text-base text-[#DFC187]/80 font-medium tracking-wide mb-6">
+        Leave your prayers and blessings for the newlyweds {couple?.primary || 'Hassan & Haidy'}
       </p>
 
       {/* Success Alert */}
@@ -69,9 +69,9 @@ export default function Guestbook({ couple }) {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="mb-4 p-3.5 rounded-2xl bg-[#B86278] text-white flex items-center justify-center gap-2 text-xs font-serif shadow-md overflow-hidden"
+            className="mb-4 p-3.5 rounded-2xl bg-[#480814] border border-[#DFC187]/60 text-[#DFC187] flex items-center justify-center gap-2 text-xs font-serif shadow-md overflow-hidden"
           >
-            <CheckCircle2 className="w-4 h-4 text-[#D8B26E]" />
+            <CheckCircle2 className="w-4 h-4 text-[#DFC187]" />
             <span>Thank you! Your wish has been sent</span>
           </motion.div>
         )}
@@ -86,7 +86,7 @@ export default function Guestbook({ couple }) {
             placeholder="Your Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#A8586E]/20 focus:border-[#B86278] focus:outline-none text-xs text-[#A8586E] shadow-xs"
+            className="w-full px-4 py-2.5 rounded-xl bg-[#240107] border border-[#DFC187]/40 focus:border-[#DFC187] focus:outline-none text-xs text-[#DFC187] placeholder-[#DFC187]/50 shadow-xs font-medium"
           />
         </div>
 
@@ -97,7 +97,7 @@ export default function Guestbook({ couple }) {
             placeholder="Write your wishes..."
             value={wishes}
             onChange={(e) => setWishes(e.target.value)}
-            className="w-full px-4 py-2.5 rounded-xl bg-white border border-[#A8586E]/20 focus:border-[#B86278] focus:outline-none text-xs text-[#A8586E] shadow-xs resize-none"
+            className="w-full px-4 py-2.5 rounded-xl bg-[#240107] border border-[#DFC187]/40 focus:border-[#DFC187] focus:outline-none text-xs text-[#DFC187] placeholder-[#DFC187]/50 shadow-xs resize-none font-medium"
           />
         </div>
 
@@ -106,7 +106,7 @@ export default function Guestbook({ couple }) {
           whileTap={{ scale: 0.98 }}
           type="submit"
           disabled={isSubmitting}
-          className="w-full py-3 rounded-full bg-[#B86278] hover:bg-[#A35268] text-white font-serif text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 shadow-md cursor-pointer transition-colors"
+          className="w-full py-3 rounded-full bg-gradient-to-r from-[#DFC187] via-[#E8CD96] to-[#C7A158] hover:from-[#EED8A7] hover:to-[#DFC187] text-[#3B050E] font-serif text-xs uppercase tracking-widest font-bold flex items-center justify-center gap-2 shadow-md cursor-pointer transition-colors border border-[#FAF2E1]"
         >
           <Send className="w-3.5 h-3.5" />
           <span>{isSubmitting ? 'Sending...' : 'Send Wishes'}</span>

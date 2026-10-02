@@ -1,83 +1,55 @@
-import p1 from '../assets/p1.jpg';
-import p2 from '../assets/p2.jpg';
-import p3 from '../assets/p3.jpg';
-import g1 from '../assets/g1.jpg';
-
 export const invitationConfig = {
-  // Couple details (Halim & Kenzy)
+  // Couple details (Hassan & Haidy)
   couple: {
-    groom: "Halim",
+    groom: "Hassan",
     groomTitle: "GROOM",
-    bride: "Kenzy",
+    bride: "Haidy",
     brideTitle: "BRIDE",
-    coverGroom: "Halim",
-    coverBride: "Kenzy",
-    primary: "Halim & Kenzy",
-    initials: "H & K",
-    monogram: "HK",
+    coverGroom: "Hassan",
+    coverBride: "Haidy",
+    primary: "Hassan & Haidy",
+    initials: "H & H",
+    monogram: "HH",
     eventTitle: "THE WEDDING OF",
-    ceremonyHeader: "WEDDING CEREMONY INFO",
+    ceremonyHeader: "CEREMONY INFO",
     announcementLine1: "WE JOYFULLY ANNOUNCE",
     announcementLine2: "THE WEDDING OF OUR CHILDREN",
     partyHeader: "THE WEDDING PARTY WILL TAKE PLACE AT:",
-    quote: "Together with our families, we joyfully invite you to celebrate our wedding.",
+    quote: "With hearts full of love and joy, we invite you to celebrate the beginning of our forever together",
+    songTitle: "A Thousand Years",
   },
 
-  // Date & Time (Tuesday, 10 November 2026 at 7:00 PM)
+  // Date & Time (Tuesday, 27 October 2026 at 7:00 PM)
   eventDate: {
-    display: "November 10, 2026",
+    display: "October 27, 2026",
     dayOfWeek: "TUESDAY",
-    dayNumber: "10",
-    monthName: "NOVEMBER",
+    dayNumber: "27",
+    monthName: "OCTOBER",
     year: "2026",
     time: "7:00 PM",
     welcomeTime: "7:00 PM",
-    receptionTime: "6:00 PM",
-    targetIso: "2026-11-10T19:00:00",
-    monthIndex: 10, // 0-based: November = 10
-    highlightDay: 10,
+    receptionTime: "7:00 PM",
+    targetIso: "2026-10-27T19:00:00",
+    monthIndex: 9, // 0-based: October = 9
+    highlightDay: 27,
   },
 
-  // Venue details (Lana Venue - Nile Corniche, Maadi)
+  // Venue details (Azha New Cairo)
   venue: {
-    name: "Lana Venue",
-    subtitle: "Nahr El Khaled — Nile Corniche, Maadi",
-    address: "12 Nile Corniche, Maadi, Cairo, Egypt",
+    name: "Azha New Cairo",
+    subtitle: "Suez Road — El Shorouk, Cairo Governorate",
+    address: "Suez Rd, El Shorouk, Cairo Governorate",
     city: "Cairo",
-    googleMapsLink: "https://maps.app.goo.gl/ikygP46wormQHdw38?g_st=aw",
-    mapEmbedUrl: "https://maps.google.com/maps?q=Lana+Venue,+12+Nile+Corniche,+Maadi,+Cairo&hl=en&z=15&output=embed",
-    image: g1,
+    googleMapsLink: "https://www.google.com/maps/dir//Suez+Rd,+El+Shorouk,+Cairo+Governorate+4912052/data=!4m6!4m5!1m1!4e2!1m2!1m1!1s0x14581d543b64ee61:0x360ad4c38dc95575?entry=s&sa=X&ved=2ahUKEwjYg5ecvZuXAxX_gv0HHdEsBYEQlDt6BAgQEAA&hl=en",
+    mapEmbedUrl: "https://maps.google.com/maps?q=Azha+New+Cairo,+Suez+Rd,+El+Shorouk,+Cairo+Governorate&hl=en&z=14&output=embed",
   },
-
-  // Photos (p1, p2, p3)
-  gallery: [
-    {
-      id: 1,
-      role: "Groom",
-      src: p1,
-      title: "Halim",
-    },
-    {
-      id: 2,
-      role: "Bride",
-      src: p2,
-      title: "Kenzy",
-    },
-    {
-      id: 3,
-      role: "Couple",
-      src: p3,
-      title: "Halim & Kenzy",
-    },
-  ],
 
   // Schedule / Timeline
   timeline: [
-    { time: "18:00", title: "Reception" },
-    { time: "19:00", title: "Welcome & Gathering" },
-    { time: "19:30", title: "Ring Exchange & Ceremony" },
-    { time: "20:30", title: "Celebration & Music" },
-    { time: "22:00", title: "Cake & Photos" },
+    { time: "19:00", title: "Welcome & Reception" },
+    { time: "19:30", title: "Celebration & First Dance" },
+    { time: "20:30", title: "Dinner & Music" },
+    { time: "22:00", title: "Cake Cutting & Photos" },
   ],
 
   // Initial guestbook wishes
@@ -85,14 +57,14 @@ export const invitationConfig = {
     {
       id: "w-1",
       name: "Tarek & Yasmin",
-      wishes: "Alf Mabrouk Halim & Kenzy! Wishing you a lifetime of happiness and eternal love!",
+      wishes: "Alf Mabrouk Hassan & Haidy! Wishing you a lifetime of happiness, peace, and eternal love!",
       timestamp: "Today",
       likes: 18,
     },
     {
       id: "w-2",
       name: "Ahmed & Salma",
-      wishes: "Congratulations Halim & Kenzy on your wedding! Can't wait to celebrate with you!",
+      wishes: "Congratulations Hassan & Haidy! So thrilled to celebrate this magical day with you!",
       timestamp: "Today",
       likes: 12,
     },
